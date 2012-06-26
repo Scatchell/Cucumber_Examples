@@ -18,4 +18,16 @@ public class VirtualValueTeam {
 		return devs;
 	}
 	
+	public int getSizeOfTeam(){ 
+		return devs.size();
+	}
+	
+	public int getOverallSkillLevel(){
+		int overallSkill = 0;
+		for (Dev dev : devs) {
+			overallSkill += dev.getExperience() + dev.getSkill() + (dev.getTypingSpeed() / 5);
+		}
+		
+		return overallSkill;
+	}
 }
