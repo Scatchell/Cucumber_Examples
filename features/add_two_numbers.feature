@@ -1,8 +1,8 @@
 Feature: Perform operations on two numbers
 
-In order to add not have to use my head
+In order to add not have to think
 I want to perform various operations on numbers
-and get the correct answers
+and get the correct answers from the computer
 
 @step_1
 Scenario: Add two numbers

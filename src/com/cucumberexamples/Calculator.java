@@ -20,6 +20,6 @@ public class Calculator {
 	}
 	
 	public void multiply(int a, int b){
-		result = a * b;
+		result = a*b;
 	}
 }

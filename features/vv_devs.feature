@@ -1,8 +1,15 @@
-Feature: Add devs to a team and list devs
+Feature: Add devs to a team and find its skill level
+
+In order to get an accurate rating of a team
+I want to add various devs to a VirtualValueTeam
+and get the correctly calculated overall skill level
+and get the correctly calculated member count
+
+Background: 
+Given a VirtualValueTeam
 
 @step_3
-Scenario:  Add dev to a team
-Given a VirtualValueTeam
+Scenario:  Calculate overall skill level of a one person team
 And a Dev with the name Bob
 And the Dev has a skill level of 2
 And the Dev has a typing speed of 5
@@ -13,9 +20,8 @@ And the VirtualValueTeam will have an overall skill level of 6
 
 
 @step_4
-Scenario: Add dev to a team
-Given a VirtualValueTeam
-When I add Devs with the following attributes
+Scenario: Calculate overall skill level of a two person team
+And I add Devs with the following attributes
 | name    | skill level | typing speed | experience |
 | Bob     | 2           | 5            | 3          |
 | James   | 3           | 10           | 4          |

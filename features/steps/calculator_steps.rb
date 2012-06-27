@@ -15,6 +15,6 @@ Then /I get (\d+)/ do |result|
   @calculator.result().should == result.to_i
 end
 
-When /I multiply the numbers (\d+) and (\d+)/ do |first_number, second_number|
+When /^I multiply the numbers (\d+) and (\d+)$/ do |first_number, second_number|
   @calculator.multiply(first_number.to_i, second_number.to_i)
 end
